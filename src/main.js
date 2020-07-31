@@ -14,7 +14,9 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
+import Clipboard from 'clipboard'; 
 
+Vue.prototype.Clipboard=Clipboard;
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api

@@ -10,7 +10,7 @@
           <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
           <i class="el-icon-caret-bottom" />
         </div>
-        <el-dropdown-menu slot="dropdown" class="user-dropdown">
+        <el-dropdown-menu slot="dropdown" class="user-dropdown" style="top:-20px">
           <router-link to="/">
             <el-dropdown-item>
               Home
@@ -135,5 +135,8 @@ export default {
       }
     }
   }
+}
+.el-popper[x-placement^=bottom]{
+  margin-top:-12px !important;
 }
 </style>
