@@ -52,6 +52,9 @@ export default {
       ipt: ""
     }
   },
+  mounted(){
+    this.getData();
+  },
   methods:{
     copy(value){
     const el = document.createElement(
@@ -70,6 +73,12 @@ export default {
         1.5
       );
     },
+     getData(){
+       this.$axios
+        .get('/parameter/query').then((res)=>{
+          console.log(res,'res');
+        })
+    }
   }
 };
 </script>

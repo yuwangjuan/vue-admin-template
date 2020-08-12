@@ -15,8 +15,10 @@ import router from './router'
 import '@/icons' // icon
 import '@/permission' // permission control
 import Clipboard from 'clipboard'; 
-
+import axios from 'axios';
+require('./mock');
 Vue.prototype.Clipboard=Clipboard;
+Vue.prototype.$axios = axios;
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
